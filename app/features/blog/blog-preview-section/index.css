@@ -1,0 +1,41 @@
+.blog-preview {
+  padding: 0 5vw;
+  margin-block-start: 2rem;
+}
+
+.blog-preview > h1,
+.blog-preview > a {
+  margin: 0;
+}
+
+.blog-preview > a {
+  text-decoration: none;
+  border: 2px solid var(--text-color);
+  border-radius: 2rem;
+  padding: 8px;
+  display: inline-block;
+  margin-block-start: 0.5rem;
+}
+
+.blog-preview > a:visited {
+  color: var(--text-color);
+}
+
+.blog-preview__posts {
+  margin-block-start: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 30em) {
+  .blog-preview__posts {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.blog-preview__posts > div {
+  background-color: pink;
+  padding: 0.5rem;
+}

@@ -1,0 +1,13 @@
+.blog-post__img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.blog-post h1 {
+  margin: 0;
+}
+
+.blog-post__metadata {
+  color: #a9adc1;
+}

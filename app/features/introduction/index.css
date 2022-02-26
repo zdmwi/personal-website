@@ -1,0 +1,9 @@
+.introduction-container {
+  padding: 0 5vw;
+  margin-block-start: 1.5rem;
+}
+
+.introduction-container > h1,
+.introduction-container > p {
+  margin: 0;
+}

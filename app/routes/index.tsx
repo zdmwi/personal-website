@@ -1,20 +1,24 @@
 import type { LinksFunction } from "remix";
 
-import homeStyles from "./index.css";
+import {
+  Introduction,
+  links as introductionStylesLink,
+} from "../features/introduction";
+
+import {
+  BlogPreviewSection,
+  links as blogPreviewStylesLink,
+} from "../features/blog/blog-preview-section";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: homeStyles }];
+  return [...introductionStylesLink(), ...blogPreviewStylesLink()];
 };
 
 export default function Index() {
   return (
-    <main className="home">
-      <section className="home__intro">
-        <h1>Zidane Wright</h1>
-        <p>
-          Software Engineer with a strong passion for lorem ipsum dolor set amet
-        </p>
-      </section>
+    <main>
+      <Introduction />
+      <BlogPreviewSection />
     </main>
   );
 }
