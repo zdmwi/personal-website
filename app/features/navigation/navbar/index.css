@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navbar__logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--text-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1rem;
+}
